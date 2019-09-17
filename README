@@ -1,0 +1,42 @@
+install knex
+
+- npm i -g knex
+
+- knex init
+
+
+migrations:
+
+- knex migrate:make create_table_users
+
+
+knex migrate:latest
+
+
+
+Rodar:
+node config/database.js 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  getUsers{
+    id
+    name
+    email
+    password
+  }
+}
